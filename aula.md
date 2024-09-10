@@ -5,7 +5,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 
 ## Peças de uma linguagem
 
-- comentários
+- [x] comentários
 - declaração de variáveis (const, let)
 - operações (atributo, concatenação, matemáticos, lógicos)
 - tipos de dados (string, number, boolean)
@@ -18,3 +18,18 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 - coletar os dados
 - processar os dados (manipular, alterar...)
 - apresentar os dados
+
+## Escopo e variáveis
+
+- váriaveis globais e locais
+- constantes
+
+## Tipos de dados
+
+- strings (textos): ""  ''  ``
+- number: 2 1.4
+- function
+
+## Operadores
+
+- operadores de atribuição de valor
