@@ -52,3 +52,11 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 - [x] criar, passar argumento
 - [x] executar
 - [x] arrow function / named function
+
+## Estrutura de repetição
+
+- [x] while
+
+## Condicionais
+
+- [x] switch

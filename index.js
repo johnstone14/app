@@ -1,10 +1,10 @@
-// hello world
-const mensagem = "olá João!"
+const start = () => {
+    let count = 1
+    while(count <= 10) {
+    console.log(count)
+    count = count + 1
+    }
 
-
-{
-    const mensagem = "olá mundo!"
-    console.log(mensagem)
 }
 
-console.log(mensagem);
+start()
