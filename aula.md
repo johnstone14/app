@@ -34,6 +34,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 
 - [x] operadores de atribuição de valor =
 - [x] operador de concatenação +
+- [x] operadores de compraração: == != <= >= < >
 
 ## Estruturas de dados:
 
@@ -60,6 +61,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 ## Condicionais
 
 - [x] switch
+- [x] if/else
 
 ## Módulos em Node.js
 
