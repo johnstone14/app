@@ -35,12 +35,14 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, resolv
 - [x] operadores de atribuição de valor =
 - [x] operador de concatenação +
 - [x] operadores de compraração: == != <= >= < >
+- [x] spread operator: ...
 
 ## Estruturas de dados:
 
 ## Arrays
 
 - [x] uma lista que contém qualquer tipo de dado
+- [x] método de arrays: push, [find, forEach, filter] : HOF (higher Order Functions)
 
 ## Objetos
 
