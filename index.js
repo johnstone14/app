@@ -60,7 +60,7 @@ const metasrealizadas = async () => {
     }
 
     await select ({
-        message: "Metas realizadas " + realizadas.length,
+        message: "Metas realizadas: " + realizadas.length,
         choices: [...realizadas]
     })
 }
@@ -76,9 +76,34 @@ const metasabertas = async () => {
     }
 
     await select({
-        message: "Metas abertas " + abertas.length,
+        message: "Metas abertas: " + abertas.length,
         choices: [...abertas]
     })
+}
+
+const deletarmetas = async () => {
+    const deletarmetas = metas.map((meta) => {
+        return { value: meta.value, checked: false }
+    })
+
+    const itensadeletar = await checkbox({
+        message: "Selecione um item para deletar",
+        choices: [...metasdesmarcadas],
+        instructions: false,
+    })
+
+    if(itensadeletar.length == 0) {
+        console.log("Nenhum item para deletar!")
+        return
+    }
+
+    itensadeletar.forEach((item) => {
+        metas = metas.filter((meta) => {
+            return meta.value != item
+        })
+    })
+
+    console.log("Meta(s) deletada(s) com sucesso!")
 }
 
 const start = async () => {
@@ -105,6 +130,10 @@ const start = async () => {
                     value: "abertas"
                 },
                 {
+                    name: "Deletar metas",
+                    value: "deletar"
+                },
+                {
                     name: "Sair",
                     value: "sair"
                 }
@@ -121,11 +150,14 @@ const start = async () => {
             case "listar":
                 await listarmetas()
                 break
-            case "metasrealizadas":
+            case "realizadas":
                 await metasrealizadas()
                 break
-            case "metasabertas":
+            case "abertas":
                 await metasabertas()
+                break
+            case "deletar":
+                await deletarmetas()
                 break
             case ("sair"):
                 console.log("Até a próxima! :D")
